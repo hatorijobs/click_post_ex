@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body style="width:350px;font-size:12px;">
+  <h1>せどりっくす補助ツール</h1>
+  <button id="btn3">出品時のデータ表示</button>
+  <button id="btn4">販売済のデータ表示</button>
+  <!--<button id="btn5">5555</button>-->
+  <button id="btn7">テスト</button>
+  
+  <div style="margin:5px 0 0 0;display:table;">
+    <div style="display:table-cell;vertical-align:top;">
+      セキュリティコード(3桁半角数字)<input type="text" id="security_code" value="" maxlength="3" style="width:40px;">
+    </div>
+    <div style="display:table-cell;vertical-align:top;padding:0px 5px 0 5px;">
+      <button id="btn_sc_save" style="height:22px;line-height:12px;vertical-align:middle;">保存</button>
+    </div>
+  </div>
+  <!--<select id="days_ago" style="margin:5px 5px 5px 0">
+    <option value="0">本日</option>
+    <option value="1">1日前まで</option>
+    <option value="2">2日前まで</option>
+    <option value="3">3日前まで</option>
+    <option value="4">4日前まで</option>
+    <option value="5">5日前まで</option>
+    <option value="6">6日前まで</option>
+    <option value="7">7日前まで</option>
+    <option value="8">8日前まで</option>
+    <option value="9">9日前まで</option>
+    <option value="10">10日前まで</option>
+  </select>の<br>-->
+
+  <!--<button id="btn6">クリックポストのお問合せ番号を取得する</button>-->
+
+  <br>
+  [1]クリックポストの<a href="https://clickpost.jp/mypage/index?" target="_blank">マイページ(1ページ目)</a>を開く。<br>
+  ↓<br>
+  [2]右のボタンを押す。<button id="get_tracking_number" style="height:22px;line-height:12px;">お問合せ番号を取得</button><br>
+  ↓<br>
+  [3]せどりっくすのAmazon出品ページを表示する。<br>
+  ↓<br>
+  [4]右のボタンを押す。<button id="btn8" style="height:22px;line-height:12px;">お問合せ番号を転記</button><br>
+  ↓<br>
+  [5]追跡番号が入力されていることを確認する。<br>
+  ↓<br>
+  [6]入力されていない追跡番号がある場合は、[1]に戻る。今度は、マイページ(2ページ目)を開いて、同様の処理を行う。<br>
+  ↓<br>
+  [7]追跡番号が全て正しく入力されたら完了。最後に「発送通知」ボタンを押す。<br>
+  <script src="popup.js" charset="UTF-8"></script>
+  <link rel="stylesheet" href="./css/popup.css" type="text/css">
+</body>
+
+</html>

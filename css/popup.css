@@ -1,0 +1,37 @@
+.container{
+  display: table;
+  width: 600px;
+  height: 200px;
+}
+
+.box{
+  display: table-cell;
+  text-align: center;
+  color: #fff;
+}
+
+.apple{
+  background: #ED3B2B;
+  vertical-align: middle;
+}
+
+.orange{
+  background: #E4642C;
+  vertical-align: top;
+}
+
+.grape{
+  background: #9D2AC0;
+  vertical-align: bottom;
+}
+
+.td-style{
+  vertical-align: top;
+  background-color:#DDFFFF;
+  font-size:10px;
+  font-weight: normal;
+}
+
+button{
+  font-size:12px;
+}

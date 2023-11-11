@@ -1,0 +1,28 @@
+{
+  "name": "クリックex",
+  "description": "拡張機能の説明",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting", "storage"],
+  "options_page": "",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["popup.js"],
+      "matches": [
+        "https://clickpost.jp/mypage/*",
+        "https://sellercentral.amazon.co.jp/*",
+        "https://wallet-link.fep.sbps.jp/*",
+        "https://127.0.0.1/*"
+      ],
+      "css": [
+        "css/popup.css"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}
